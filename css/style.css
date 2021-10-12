@@ -6,6 +6,13 @@ html {
     box-sizing: inherit;
   }
 
+  /* Fuente */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+
   /* Globales */
 
   a {
@@ -20,6 +27,7 @@ html {
 
   img {
       max-width: 100%;
+      display: block;
   }
 
   /* Header y navegacion  */
@@ -53,6 +61,24 @@ html {
 /* Box Model */
 
 /* Categorias */
+
+.categorias h2 {
+    text-align: center;
+}
+
+.categoria a {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.categoria a:hover {
+    background-color: #037bc0;
+    color: #fff;
+    border-radius: 0 0 10px 0;
+}
+
 .listado-categorias {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
