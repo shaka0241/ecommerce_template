@@ -29,7 +29,7 @@
     <main class="contenido-principal contenedor">
         <h2 class="text-center">Contacto</h2>
 
-        <form action="">
+        <form action="" class="formulario">
             <fieldset>
                 <legend>Tus Datos</legend>
                 <div class="campo">
@@ -56,11 +56,38 @@
 
             <fieldset>
                 <legend>Pais</legend>
+                <div class="campo">
+                    <label for="pais">Pais</label>
+                    <select name="pais">
+                        <option value="">-- Seleccione</option>
+                        <option value="1">Pais 1</option>
+                        <option value="2">Pais 2</option>
+                    </select>
+                </div>
             </fieldset>
 
             <fieldset>
                 <legend>Informacion Extra</legend>
+                <div class="campo">
+                    <label for="cliente">Cliente</label>
+                    <input id="cliente" type="radio" name="tipo">
+                </div>
+                <div class="campo">
+                    <label for="proveedor">Proveedor</label>
+                    <input id="proveedor" type="radio" name="tipo">
+                </div>
+                <div class="campo">
+                    <label for="categoria">Categoria de Interes</label>
+                    <input list="categorias" name="categorias">
+                    <datalist id="categorias">
+                        <option value="Cocina">
+                        <option value="Arte">
+                        <option value="Teatro">
+                        <option value="Motor">
+                    </datalist>
+                </div>
             </fieldset>
+            <button type="submit" class="btn">Enviar Formulario</button>
         </form>
 
     </main>
